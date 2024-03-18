@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+/* 
+    3 colores diferentes en la pagina web
+    no mas 3 colores neutros (blanco,negro,tono de negros ,tonos de gris)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Colores n1
+    #2b193d
+    #2c365e
+    #484d6d
+    #4b8f8c
+    #c5979d
+*/
+
+/* Colores n2 
+    #55E7FA
+    #5882FC
+    #46ADFA
+    #5CFAD7
+    #9790FC
+*/
+body{
+  
+    font-family: 'Carrois Gothic', sans-serif;
+    background: linear-gradient(#2b193d,#484d6d);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: white;
+}
+
+html{
+    height: 100%;
+    background: linear-gradient(#2b193d,#484d6d);
+}    
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    background-color: #2b193d;
+}
+
+nav a{
+ text-decoration: none;
+ color: #484d6d;
+}
+ /* img{
+    height: 1.5em;
+    width: auto;
+ } */
+footer{
+    display: flex;
+    background-color: blueviolet;
+    margin-top: auto;
+    /* grid-area: footer; */
+}
+
+
+/* Clases */
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+    ". pJ pJ pJ ."
+    ". . . . ."
+    ". ab ab tec  ."
+    ".exp exp exp  ."
+    ". . tP . ."
+    ". pro pro pro  ."
+    ". cont cont cont ."
+    "footer footer footer footer footer"
+}
+.spaceB{
+    width: 100%;
+    height: 200px;
+    grid-area: spaceB;
+}
+.pJ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: pJ;
+    width: 100%;
+    height: auto;
+}
+.pit{
+     /* background-color: #3ea3b5; */
+     width: 23rem;
+     min-width: 15rem;
+     height:25rem;
+     margin-bottom: 50px;
+     display: flex;
+     /* flex-direction: column; */
+     justify-content: space-evenly;
+     align-items: center;
+     /* border-radius: 90px; */
+     z-index: 3;
+}
+
+.pit h1{
+    font-size: 3rem;
+    width: 100%;
+    padding: 2px;
+    background-color: #3ea3b5;
+    border-radius: 16px 0px 0px 12px;
+}
+
+.pit img{
+    border: 10px solid #3ea3b5;
+    width: 60%;
+    height: auto;
+    margin: -1px;
+    border-radius: 100px;
+    object-fit: cover;
+   object-position: bottom;
+}
+
+.pi{
+    width: 100%;
+    background-color: #3ea3b5;
+    border-radius: 0px 16px 12px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.pi p{
+    font-size: 1.7rem;
+    width: 8em;
+    margin: 5px;
+}
+.am{
+
+    grid-area: ab;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    background: #484d6d;
+    border: 1px solid #4b8f8c;
+    border-radius: 10px;
+    /* Recordar que animation: lo puedes hacer todo en una linea */
+        /* ademas de una agregar otra linea mas con , */
+    animation: ltr 1s linear both;
+    /* animation-name: ltr;
+    animation-duration: 1s;
+    animation-fill-mode: both; */
+
+
+}
+.tec{
+    grid-area: tec;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+    background: #484d6d;
+    border-radius: 10px;
+    border: 1px solid #4b8f8c;
+    text-align: center;
+    /* Recordar que animation: lo puedes hacer todo en una linea */
+    /* animation: rtl 1.3s linear both; */
+    animation-name:rtl;
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    
+}
+.tec img{
+    height: 2.5em;
+}
+.ct{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    justify-content: center;
+    
+}
+/* .ct :hover{
+ 
+} */
+
+.ct div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    transition-duration: 0.5s;
+
+
+    
+}
+.ct div:hover{
+    /* background:  #c5979d; */
+ border-radius: 8px;
+    scale: 1.3;
+    transition-duration: 0.1s;
+}
+/* 
+@media (prefers-reduced-motion: reduce){
+    .ct div{
+        transition:none;
+    }
+}
+*/
+
+
+.cExp{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    /* Consume mucho espacio para el celular */
+    background: greenyellow;
+    font-size: 1em;
+    background: #484d6d;
+    border: 1px solid #4b8f8c;
+    border-radius: 10px;
+    grid-area: exp;
+    animation: appear;
+    animation-duration: 2s;
+}
+
+
+.titleP{
+    grid-area: tP;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.cPr{
+    display: flex;
+    grid-area: pro;
+    width: 100%;
+    height: auto;
+    /* background: #484d6d;
+    border: 1px solid #4b8f8c; */
+}
+.cPr img{
+    width: 100%;
+    height: 1.5em;
+   }
+.cPr div{
+    width: 80%;
+    min-width: 150px;
+    min-height: 200px;
+    height:auto;
+    background-color: blue;
+    padding: 10px;
+
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+.cCont{
+    grid-area: cont;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    /* background: #484d6d;
+    border: 1px solid #4b8f8c; */
+}
+.cCont a{
+    background:linear-gradient(#2b193d,#484d6d);
+    border: 2px solid #4b8f8c;
+    border-radius: 90px;
+}
+.cCont img{
+    height: 10rem;
+    width: auto;
+    padding: 10px;
+    
+}
+
+/* Usar JS para la animacion de ocultar y luego mostrar
+de un ciclo
+ */
+
+.iC:hover{
+    
+    animation: linkB  linear forwards;
+    
+}
+.iC{
+   z-index: 2;
+}
+
+
+/* Poner una cajita con las tecnologias hechas de la pagina y que se puede 
+cerrar facilmente */
+
+/* Animaciones */
+@keyframes slidein{
+    from {
+        /* translate: translateX(0); */
+        margin-left: -10px;
+        width: 100%;
+        opacity: 0%;
+      }
+    
+      to {
+        /* translate: translateX(10px); */
+        margin-left: 0%;
+        width: 100%;
+        opacity: 100%;
+      }
+}
+@keyframes ltr{
+    from{
+        /* translate: translateX(-20px); */
+        opacity: 0%;
+        margin-left:-200px;
+    }
+
+    to{
+        /* translate: translateX(100px); */
+        opacity: 100%;
+        margin-left: 0px;
+    }
+}
+@keyframes rtl{
+    0%{
+        opacity: 0%;
+        margin-left:-200px;
+    }
+
+    100%{
+       
+        opacity: 100%;
+        margin-right: 0px;
+    }
+}
+@keyframes appear{
+    0%{
+        opacity: 10%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes linkB {
+    0%{
+        scale: 0;
+        transform: translateX(-130px);
+    }
+
+    20%{scale:0.5;
+        transform: translateX(-130px)}
+
+    40%{scale: 1.3;
+        transform: translateX(-130px)}
+
+    50%{scale:1.2;
+        transform: translateX(-130px)}
+
+    70%{scale: 0.8;
+        transform: translateX(-130px)}
+
+     85%{scale: 0.9;
+    transform: translateX(0px)}
+
+    100%{scale:1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px){
+        .pJ{
+        width:100% ;
+        }
+        .pit{
+            width: 80%;
+        }
+        .pit h1{
+            font-size: 2rem;
+            padding-right: 1%;
+        }
+        .pit img{
+            width: 35%;
+            margin:-6px;
+        }
+        
+        .pi{
+            width: 100%;
+        }
+
+        .pi p { font-size: 1.5rem;}
+      
+       
+        
+    }
+
+    @media only screen and (max-width: 705px){
+        .cPr{
+            display: grid;
+            grid-area: pro;
+            width: 100%;
+            height: auto;
+            grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+        }
+    }
+
+    @media only screen and (max-width: 580px){
+        .pit img{
+            width: 55%;
+        }
+    }
+
+    @media only screen and (max-width:540px){
+        .container{
+            row-gap: 50px;
+            column-gap: 0px;
+            grid-template-columns: 5% 1fr 5%;
+            grid-template-areas: 
+            
+        ". pJ ."
+        ". . ."
+        ". ab ." 
+        ". tec ."
+        ". exp ."
+        ". tP ."
+        ". pro ."
+        ". cont ."
+        "footer footer footer"
+        }
+        .pit img{
+            width: 10em;
+        }
+    }
+
+@media only screen and (max-width: 484px){
+    .container{
+        row-gap: 50px;
+        column-gap: 0px;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-areas: 
+        
+    ". pJ ."
+    ". . ."
+    ". ab ." 
+    ". tec ."
+    ". exp ."
+    ". tP ."
+    ". pro ."
+    ". cont ."
+    "footer footer footer"
+    }
+    .pJ{
+        width: 100%;
+    }
+   
+    .pi{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding-top: 15px;
+        border-radius: 0px;
+        grid-area:titu;
+    }
+
+    .pi p{
+        animation-duration: 3s;
+        animation: slidein;
+    }
+    .pit{
+     
+     display: grid;
+     grid-template-columns: 35% 1fr;
+     grid-template-areas:
+     "nom nom"
+     "foto titu"
+     ;
+     border:5px solid #2c365e;
+     border-radius: 5px;
+     width: 90%;
+     /* min-width: 15rem; */
+     height:auto;
+     margin-bottom: 50px;
+    }
+    .pit h1{
+        text-align: center;
+        grid-area: nom;
+        border-radius: 0px;
+        border: 5px solid #4b8f8c;
+    } 
+
+
+    .pit img{
+        border-radius: 0px;
+        grid-area: foto;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        border:5px solid #4b8f8c;
+
+    }
+   
+    .pit p {
+        width: 100%;
+        font-size: 1rem;
+        
+    }
+
+    .pi p{
+        border-bottom: 1px solid #4b8f8c;
+    }
+
+    .cPr{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .cPr div{
+        width: 90%;
+        padding: 10px;
+        
+    }
+    .am{
+    width: 100%;
+    }
+    .tec{
+        width: 100%;
+    }
+    .cExp{
+        width: 100%;
+    }
+    .cCont{
+        flex-direction: column;
+
+    }
+    .cCont div{
+        margin-bottom: 20px;
+    }
+
+
+}

@@ -1,0 +1,171 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
+
+/* General */
+body{
+    color: white;
+    font-family: 'Carrois Gothic', sans-serif;
+    background-color: #001E6C;
+    height: 100vh;
+    margin:0;
+}
+
+
+nav{
+    background-color: green;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid rgba(50, 50, 50, 0.3);
+    width: 100vw;
+    background-color: green;
+    
+    
+}
+/*  */
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-auto-rows: 7;
+}
+
+/* Paleta de Colores n°1 */
+/* 
+    AZUL Oscuro: 001E6C
+    "Celeste": 035397
+    naranja: E8630A
+    Amarillo: FCD900
+
+ */
+
+ /* n°2 */
+/* 
+    red #EC4646
+   kinda brown #663F3F
+    celeste #51C2D5
+   celeste mas claro  #BBF1FA
+*/
+
+ /* Tarjeta  */
+
+.tHIH{
+    display:grid;
+    /* Ponerle min px para que nose rompa desde celular */
+    /* width:36.5em; */
+    height: 80%;
+    margin-left: 0;
+    border-radius: 10px;
+    align-self: center;
+    /* grid-column: 2/2; */
+}
+.cH1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    grid-column: 1 / 1;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.cH2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+    grid-column: 3/3;
+    margin:0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.cH1 h3,.cH2 h3{
+    background-color: #a93f44;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    padding:10px 0px 10px 0px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.cH1 img, .cH2 img{
+ width: 100%;
+ height: 2.5em;
+}
+.cH1 p,.cH2, p{
+    margin: 1px;
+}
+.nij{
+    /* background-color: #3ea3b5; */
+    width: 23rem;
+    height:25rem;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-column: 2 / 2;
+    /* border-radius: 90px; */
+    z-index: 3;
+}
+
+.nij img{
+    border-radius: 90px;
+    border: 2px solid #3ea3b5;
+    width: 60%;
+    height: auto;
+    border-radius: 100px;
+    object-fit: cover;
+   object-position: bottom;
+
+}
+
+/*  Acerca de mi */
+
+.am{
+    display: block;
+    grid-column: 2/3;
+}
+
+.cExp{
+    grid-column: 2/2;
+}
+
+.cProjects img{
+    width: 100%;
+    height: 1.5em;
+   }
+
+.titlePD{
+    text-align: center;
+    grid-column: 3/2;
+}
+.cProjects{
+    display: flex;
+    grid-column: 5/2;
+    grid-column-start: 5;
+    grid-column-end: 1;
+    /* justify-content: space-between; */
+}
+.cProjects div{
+    width: 100%;
+    background-color: blue;
+    margin: 1rem;
+}
+
+.cCont{
+    text-align: center;
+    grid-column: 2/3;
+}
+ /* id */
+
+ #orden{
+    margin:0 12em 0 12em;
+ }

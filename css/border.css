@@ -1,0 +1,24 @@
+
+body{
+    background: linear-gradient(rgb(5, 5, 71), rgb(17, 17, 104));
+    height: 100vh;
+}
+
+h1{
+  
+    font-family: system-ui;
+    font-size: 3rem;
+    background: #ccc;
+    background-clip: text;
+    background: linear-gradient(#534667,rgb(163, 198, 227));
+    
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.bor{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
