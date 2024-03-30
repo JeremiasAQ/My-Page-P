@@ -16,13 +16,6 @@
     #c5979d
 */
 
-/* Colores n2 
-    #55E7FA
-    #5882FC
-    #46ADFA
-    #5CFAD7
-    #9790FC
-*/
 body{
   
     font-family: 'Carrois Gothic', sans-serif;
@@ -50,12 +43,9 @@ nav{
 
 nav a{
  text-decoration: none;
- color: #484d6d;
+ color: white;
 }
- /* img{
-    height: 1.5em;
-    width: auto;
- } */
+
 footer{
     display: flex;
     background-color: blueviolet;
@@ -69,12 +59,14 @@ footer{
 .container{
     width: 100%;
     height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
     row-gap: 10px;
     column-gap: 10px;
     grid-template-areas: 
-    ". pJ pJ pJ ."
+    ". pJ pJ . ."
     ". . . . ."
     ". ab ab tec  ."
     ".exp exp exp  ."
@@ -114,12 +106,12 @@ footer{
     font-size: 3rem;
     width: 100%;
     padding: 2px;
-    background-color: #3ea3b5;
+    background-color: #275B63;
     border-radius: 16px 0px 0px 12px;
 }
 
 .pit img{
-    border: 10px solid #3ea3b5;
+    border: 10px solid #275B63;
     width: 60%;
     height: auto;
     margin: -1px;
@@ -130,7 +122,7 @@ footer{
 
 .pi{
     width: 100%;
-    background-color: #3ea3b5;
+    background-color: #275B63;
     border-radius: 0px 16px 12px 0px;
     display: flex;
     flex-direction: column;
@@ -389,14 +381,13 @@ cerrar facilmente */
         width:100% ;
         }
         .pit{
-            width: 80%;
+            width: 100%;
         }
         .pit h1{
             font-size: 2rem;
             padding-right: 1%;
         }
         .pit img{
-            width: 35%;
             margin:-6px;
         }
         
